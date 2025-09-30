@@ -20,7 +20,7 @@ public class ImagenEventoService implements IImagenEventoService {
 
     @Autowired
     private ModelMapper modelMapper;
-sadasdasd
+ SADASD
 
     @Override
     public ImagenEventoDTO registrar(ImagenEventoDTO imagenEventoDTO){
