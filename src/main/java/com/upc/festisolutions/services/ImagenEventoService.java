@@ -21,7 +21,6 @@ public class ImagenEventoService implements IImagenEventoService {
     @Autowired
     private ModelMapper modelMapper;
 
-
     @Override
     public ImagenEventoDTO registrar(ImagenEventoDTO imagenEventoDTO){
         if(imagenEventoDTO.getId() != null){
