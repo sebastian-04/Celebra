@@ -22,16 +22,7 @@ public class ImagenEventoService implements IImagenEventoService {
     private ModelMapper modelMapper;
 
 
-    @Override
-    public ImagenEventoDTO registrar(ImagenEventoDTO imagenEventoDTO){
-        if(imagenEventoDTO.getId() != null){
-            Imagenevento imagenEvento = modelMapper.map(imagenEventoDTO, Imagenevento.class);
-            imagenEventoRepository.save(imagenEvento);
-            return modelMapper.map(imagenEvento,ImagenEventoDTO.class);
 
-        }
-        return null;
-    }
     @Override
     public ImagenEventoDTO actualizar(ImagenEventoDTO imagenEventoDTO){
         if (imagenEventoDTO.getId() != null){
